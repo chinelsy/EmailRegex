@@ -16,7 +16,7 @@ namespace RegexEmail
             string emailSamples = Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             string mails=FindAllEmails(emailSamples);
-            Console.WriteLine();
+            Console.WriteLine("email will be counted");
             Console.WriteLine(mails);
             Console.ResetColor();
             //Console.WriteLine(FindAllEmails(mails));
