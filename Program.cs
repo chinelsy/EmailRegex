@@ -19,8 +19,6 @@ namespace RegexEmail
             Console.WriteLine("email will be counted");
             Console.WriteLine(mails);
             Console.ResetColor();
-            //Console.WriteLine(FindAllEmails(mails));
-            // Console.ReadLine();
         }
         public static string FindAllEmails(string emailInput)
         {
@@ -28,7 +26,7 @@ namespace RegexEmail
 
             //instantiate pattern that will match our regex 
 
-            Regex emailRegex = new Regex(@"[a-zA-Z0-9._%+-]+@[a-zA-Z]+(\.[a-zA-Z0-9]+)+",
+            Regex emailRegex = new Regex(@"[a-zA-Z0-9._%+-]+@[a-zA-Z]+(\.[a-zA-Z]+)+",
             RegexOptions.IgnoreCase);
 
             //find items that matches with our regex pattern
