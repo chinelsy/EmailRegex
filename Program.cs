@@ -33,10 +33,12 @@ namespace RegexEmail
             MatchCollection emailMatches = emailRegex.Matches(data);
 
             StringBuilder sb = new StringBuilder();
+            int number = 1;
 
             foreach (Match emailMatch in emailMatches)
             {
-                sb.AppendLine(emailMatch.Value);
+                sb.AppendLine($"{number}. {emailMatch.Value}");
+                number++;
             }
 
             string emailsRecieved = sb.ToString();
